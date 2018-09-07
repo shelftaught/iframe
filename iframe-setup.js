@@ -1,7 +1,7 @@
 function setupDynamicIframe() {
 	[
 	  'https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.3/iframeResizer.min.js',
-	  'file:///C:/Users/Duncan/Desktop/iframeres.js'
+	  'https://cdn.jsdelivr.net/gh/duncangarde/shelftaught-iframe-js/iframe-load-actions.js.min'
 	].forEach(function(src) {
 	  var script = document.createElement('script');
 	  script.src = src;
@@ -9,3 +9,6 @@ function setupDynamicIframe() {
 	  document.head.appendChild(script);
 	});
 }
+
+
+      
