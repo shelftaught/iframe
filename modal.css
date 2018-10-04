@@ -1,0 +1,280 @@
+.st-modal-open {
+  overflow: hidden;
+}
+
+.st-modal {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.25s linear;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.st-modal.open {
+  display:block;
+}
+
+/*.modal.in .modal-dialog { transform: translate(0, 0) }*/
+
+.st-modal.in {
+  opacity: 1;
+}
+
+.st-modal-open .st-modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.st-modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 30px 5px;
+}
+
+@media (min-width: 480px) {
+  .st-modal-dialog {
+    margin: 30px;
+  }
+}
+
+.st-modal-content {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #ccc; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 3px 9px rgba(0,0,0,.5);
+  background-clip: padding-box;
+  color: #333;
+  outline: 0;
+}
+
+.st-modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 998;
+  background-color: #333;
+}
+
+.st-modal-backdrop.fade { .opacity(0); }
+.st-modal.in { background-color: rgb(0,0,0,0.85) }
+
+.st-modal-header {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+  /*&:extend(.clearfix all);*/
+}
+
+.st-modal-header .close {
+  margin-top: -2px;
+}
+
+.st-modal-title {
+  margin: 0;
+  line-height: 1.24;
+  font-size: 1.3em;
+}
+
+.st-authors {
+  font-size: 0.9em;
+}
+
+.st-modal-body {
+  position: relative;
+  padding: 15px;
+  min-height: 16em;
+  font-size: 10px;
+}
+
+.st-icon {
+  height: 14px;
+}
+
+.st-cover-container {
+  float:left;
+}
+
+.st-cover {
+  font-size: 10px;
+  width: 10.5em;
+  height: 16em;
+  display:inline-block;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+.st-details-container {
+  vertical-align:top;
+  padding-bottom: 15px;
+  font-size: 10px;
+  display:inline-block;
+  min-height: 0em;
+}
+
+.st-tag {
+  display:inline-block;
+  border :1px solid #ccc; 
+  padding: 0.2em 0.4em;
+  font-family:sans-serif;
+  margin-right: 0.3em;
+  margin-bottom: 0.3em;
+  letter-spacing: -0.02em;
+  font-size: 14px;
+}
+
+.st-recommendation-container {
+  padding-bottom: 15px;
+  font-size: 15px;
+}
+
+@media (min-width: 480px) {
+  .st-cover, .st-modal-body {
+    font-size: 12px;
+  }
+
+  .st-recommendation-container {
+    font-size: 16px;
+  }
+
+  .st-details-container {
+    font-size: 12px;
+    display:block;
+    min-height: 16em;
+  }
+}
+
+@media (min-width: 768px) {
+  .st-cover, .st-details-container, .st-modal-body {
+    font-size: 14px;
+  }
+
+  .st-tag {
+    font-size: 15px;
+  }
+}
+
+.st-recommendation-title {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.st-recommendation-title > span {vertical-align:middle; line-height:1;}
+
+.st-reviews-link {
+  text-decoration:none;
+  color: #555;
+  vertical-align: middle;
+  line-height: 1;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  display:inline-block;
+
+}
+
+.st-reviews-link:hover {
+  color: #333;
+  cursor: pointer;
+}
+
+
+.st-modal-footer {
+  padding: 15px;
+  text-align: right; 
+  border-top: 1px solid #ccc;
+}
+
+.st-close {
+  color: #333;
+  -webkit-appearance: none;
+   padding: 0;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+  font-size: 21px;
+  font-weight: 700;
+  float:right;
+}
+
+.st-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.st-btn-def {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+  text-decoration:none;
+}
+
+.st-btn-amz {
+  background-color: #f2b529;
+  color: #333;
+  text-decoration:none;
+}
+
+.st-btn-amz > span {
+  margin-left: 0.5em;
+  vertical-align:middle;
+}
+
+.st-btn-amz > svg {
+  vertical-align:middle;
+}
+
+.st-btn-def:hover {
+  background-color: #ddd;
+}
+
+.st-close:hover{
+  opacity: 0.5;
+}
+
+.pull-left {
+  float:left;
+}
+
+#st-see-all-reviews-container {
+  text-align: left;
+  padding-bottom:15px;
+}
+
+@media (min-width: 768px) {
+  .st-modal-dialog {
+    width: 600px;
+    margin: 80px auto;
+  }
+  .st-modal-content {
+    .box-shadow(0 5px 15px rgba(0,0,0,.5));
+  }
+}
+
