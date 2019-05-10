@@ -260,6 +260,10 @@
   vertical-align:middle;
 }
 
+.st-btn-amz:hover {
+  color: #333;
+}
+
 .st-btn-def:hover {
   background-color: #ddd;
 }
