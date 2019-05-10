@@ -1,7 +1,7 @@
 function setupDynamicIframe() {
 	[
 	  'https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.3/iframeResizer.min.js',
-	  'https://cdn.jsdelivr.net/gh/shelftaught/iframe@3.2/iframe-load-actions.js',
+	  'https://cdn.jsdelivr.net/gh/shelftaught/iframe@3.4/iframe-load-actions.js',
 	].forEach(function(src) {
 	  if (document.querySelectorAll('[src="' + src + '"]').length > 0) {
 	  	if (typeof iFrameResize === 'function') {
@@ -22,7 +22,7 @@ function setupDynamicIframe() {
 	  };
 	});
 	[
-	  'https://cdn.jsdelivr.net/gh/shelftaught/iframe@3.2/modal.css'
+	  'https://cdn.jsdelivr.net/gh/shelftaught/iframe@3.4/modal.css'
 	].forEach(function(href) {
 	  if (document.querySelectorAll('[href="' + href +'"]').length > 0) {
 	  }
